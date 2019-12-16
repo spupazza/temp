@@ -23,21 +23,84 @@
     <nav>
       <ul>
         <li><a href="/"><b>Home</b></a></li>
-        <li><a href="#swaps"><b>Swaps</b></a></li>
-        <li><a href="#donations"><b>Donations</b></a></li>
-        <li><a href="#beforeafter"><b>Before/After</b></a></li>
+        <li><a href="/swaps"><b>Swaps</b></a></li>
+        <li><a href="/donations"><b>Donations</b></a></li>
+        <li><a href="/ba"><b>Before/After</b></a></li>
         <li><a href="/contacts"><b>Contact</b></a></li>
+          <form accept-charset="UTF-8" style="display: inline; width: 20%;" action="/search" method="post" >
+                  
+                  
+                   
+                    <input name="search" type="text" placeholder="What are you searching For?" />
+                     
+            
+                  <button class="button">Search</button>
+          </div>
+              </form>
       </ul>
     </nav>
    
 
   </div>
-  </header>
-  
-    <section id="showcase">
+  </header>    <section id="showcase">
+    <div class="container">
     
+      <h2>Welcome to  SwUpcycle<br>
+      <span>Where is the right place for sharing upcycled clothes projects <br> and for clothes swaps and donations!</span></h2>
+    </div>
+        <a href="/register" class="button2">Register</a>
+        <a href="/login" class="button2">Login</a>
+                <a href="/logout" class="btn btn-primary">Log Out</a>
 
-        </section>
+  </section>
+  
+ <div class="row">
+        
+         
+          <h3>Welcome to the upcycled projects page</h3>
+            <br>
+            
+        
+         <div class="container">
+        <div class="item">
+        <% result.forEach(function(posts) { %>
+                       
+                      
+                        <div class="item">     
+                        <h1 class="itemtitle">Id: <%= posts.Id %> </h1>
+                        <h1 class="itemp">Title: <%= posts.Title %></h1>
+                        <p class="itemp">Description: <%= posts.Descr %></p>
+                       
+                      <a href="/ba/<%= posts.Id %>" class="btn btn-primary">View</a>
+                        <img src="/<%= posts.Image %>" class="pimage"  />
+                        <a href="/editpost/<%= posts.Id %>" class="btn btn-primary">Edit</a>
+  <p class="btn btn-primary" id="doit<%= posts.Id %>">Delete</a>
+  <p id="yes<%= posts.Id %>" style="display:none">
+  Are you sure?
+                        <a href="/delete/<%= posts.Id %>" class="btn btn-primary">Yes</a>
+             </p>
+             
+             <script>
+               $(document).ready(function(){
+                 $("#doit<%= posts.Id %>").click(function(){
+                   $("#yes<%= posts.Id %>").slideToggle(2000);
+                   
+                 })
+                 
+               })
+               
+             </script>
+             
+                        </div>
+           
+    
+  
+  <% }); %>
+        
+        </div>
+        </div>
+ <a href="/add" class="btn btn-primary">Add New Project</a>
+    </div>
         
         
   <footer>
@@ -56,4 +119,5 @@
 
     });
     </script>
+    </body>
 </html>

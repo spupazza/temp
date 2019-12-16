@@ -185,6 +185,55 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
+.item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 5px 0;
+ 
+}
+
+.itemp {
+   display: block;
+    color: #4CAF50;
+    text-align: center;
+    padding: 4px 6px;
+    text-decoration: none;
+    font-size: 16px
+    
+}
+
+.row {
+    display: -webkit-flex;
+    display: inline-block;
+    width: 100%;
+}
+
+#itemsContainer {
+    width: 100%;
+    text-align: center;
+    
+    
+}
+
+
+.itemtitle {
+   display: block;
+    color: #4CAF50;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 25px
+    
+}
+
+.pimage {
+    width: 30%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block;
+    
+}
+
 /*Back to top */
 #backtop {
   text-align: center;
