@@ -1,0 +1,291 @@
+
+ 
+body{
+  font-family: 'Source Sans Pro','arial', 'Helvetica', sans-serif;
+  line-height: 1.5em;
+  padding: 0;
+  margin: 0;
+    background-color: #CEF6F5;
+    min-height:900px;
+     font-size: 1.2rem;
+    font-family: 'Source Sans Pro','arial', 'Helvetica', sans-serif;
+}
+.container{
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+.topwrap{
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+
+}
+hr{
+  width: 90%;
+  margin-top: 5%;
+  opacity: .3;
+}
+
+h3{
+  text-align: center;
+  font-size: 2rem;
+  color: purple;
+}
+h4{
+  font-size: 1.2em;
+}
+/* header */
+header{
+  background-color: #CEECF5;
+  color:#D358F7;
+  border-bottom: #FF8000 3px solid;
+  text-align: center;
+  line-height: 2.5em;
+}
+.topwrap #logo{
+  display: block;
+  /* cursor: pointer; */
+  margin: auto;
+
+}
+
+.topwrap #logo img{
+  width: 23%;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  margin: .1em;
+  font-size: 15%; 
+}
+nav a{
+  color: #D358F7;
+  text-decoration: none;
+  text-transform:uppercase;
+  
+  padding: .2em;
+}
+header .active a{
+  color: #FF8000;
+}
+header a:hover{
+  color: #ed480f;
+}
+#socialicon {
+  font-size: 1.2rem;
+
+}
+#socialicon a{
+  color: green;
+}
+#socialicon i{
+  padding: .3em;
+}
+#socialicon i:hover{
+  color: #ed480f;
+  cursor: pointer;
+}
+/*showcase area*/
+#showcase{
+  min-height:350px;
+  background: url('../line.jpg');
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  -webkit-filter: grayscale(30%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(30%);
+}
+#showcase .container h2{
+  margin-top: 2.2em;
+  font-size:2.8rem;
+  font-weight: 900;
+  line-height: 1em;
+  display: block;
+}
+#showcase span{
+  font-weight: 100;
+  font-size: .6em;
+}
+
+.button2{
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #ed480f;
+  padding: .5em 2.2em;
+  color: #FFFFFF;
+}
+.button:hover{
+  background: purple;
+  font-weight: bold;
+}
+/*boxes section*/
+#boxes {
+  margin-top: .5em;
+}
+
+#boxes .box{
+  text-align: center;
+  
+}
+
+ #boxes .box img{
+  width: 300px;
+  height: 500;
+}
+
+#swaps{
+  background-color: #F2E0F7;
+}
+
+#swaps img{
+  width: 500px;
+  height: 600px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*contact section*/
+
+
+.column {
+  float: center;
+  width: 40%;
+  margin-top: 6px;
+  padding: 20px;
+}
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/*Back to top */
+#backtop {
+  text-align: center;
+}
+#backtop a{
+  color: #ed480f;
+  text-decoration: none;
+  text-transform:uppercase;
+  font-size: 16px;
+  padding: 1rem 0rem;
+}
+
+/*footer area*/
+footer{
+  padding: 15px;
+  background-color: #8372d3;
+  color: #ffffff;
+  margin-top: 20px;
+  text-align: center;
+  
+}
+
+
+
+/* responsive design*/
+@media (min-width: 650px){
+  body{
+    font-size: 1.2rem;
+  }
+
+  .topwrap {
+    display: flex;
+    align-items: center;
+  }
+  #logo{
+    flex: 2;
+    text-align: left;
+
+
+  }
+  nav{
+    flex: 4;
+
+  }
+  #socialicon{
+    flex: 1;
+    text-align: right;
+
+  }
+
+  .topwrap #logo img{
+
+    width: 40%;
+  }
+  .topwrap #logo h1{
+   font-size: 2.3rem;
+
+  }
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+  nav ul li{
+    padding: 0 .5em;
+
+  }
+  nav a{
+    font-size: 1.1rem;
+    padding: .3em;
+    text-align: justify;
+  }
+  #showcase h2{
+    font-size: 2.5rem;
+
+  }
+
+  #boxes .box{
+    float: left;
+    width: 33%;
+    padding: 1em;
+  }
+  .box img{
+    width: 24%;
+  }
+ 
+  
+  #contact .left{
+    float: left;
+    text-align: left;
+    width: 50%;
+    padding: .3em;
+  }
+
+  #contact .right{
+    float: right;
+    text-align: left;
+    width: 50%;
+    padding: .3em;
+
+  }
+  #backtop a{
+    float: right;
+  }
+}

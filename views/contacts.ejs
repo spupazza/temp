@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta charset="UTF-8">
+    <title>SwUpcycle Website</title>
+    <link rel="stylesheet" href="app.css" type="text/css">
+     <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+  </head>
+ <body>
+  <header>
+  <div class="topwrap">
+    <div id="logo">
+      <!-- <div class="logo"> -->
+        <img src="logo.png" alt="logo" align="middle">
+      <!-- </div> -->
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/"><b>Home</b></a></li>
+        <li><a href="#swaps"><b>Swaps</b></a></li>
+        <li><a href="#donations"><b>Donations</b></a></li>
+        <li><a href="#beforeafter"><b>Before/After</b></a></li>
+        <li><a href="/contacts"><b>Contact</b></a></li>
+      </ul>
+    </nav>
+   
+
+  </div>
+  </header>
+      <section id="showcase">
+    <div class="container">
+    
+      <h2>Welcome to  SwUpcycle<br>
+      <span>Where is the right place for sharing upcycled clothes projects <br> and for clothes swaps and donations!</span></h2>
+    </div>
+        <a href="/register" class="button2">Register</a>
+        <a href="#login" class="button2">Login</a>
+  </section>
+  
+
+  <div class="container">
+    
+ 
+ 
+  <form action="/contacts" id="contact-form" method="post" role="form">
+     <div class="input-group">
+    <div class="column">
+  <fieldset>
+    <label for="name">Name</label>
+    <input 
+      id="name" 
+      name="name" 
+      type="text" 
+      placeholder="Your name" 
+      required>
+
+    <label for="email">Email</label>
+    <input 
+      id="email" 
+      name="email" 
+      type="text" 
+      placeholder="Your email" 
+      required>
+
+    <label for="message">Message</label>
+    <textarea 
+      id="message" 
+      name="message" 
+      placeholder="Enter your message here" 
+      rows="3" 
+      required>
+    </textarea>
+
+    <button type="submit">Submit</button>
+  </fieldset>
+  </div>
+  </div>
+</form>
+</div>
+
+        
+    <section id="backtop">
+
+              <div class="container">
+
+                    <a href="#logo">Back to top <i class="fas fa-arrow-alt-circle-up"></i></a>
+              </div>
+
+        </section>
+        
+        
+
+  <footer>
+    <p>Copyright &copy; 2019 All rights reserved by Maria Delpiano</p>
+  </footer>
+
+
+  <script>
+
+    // Function to slide up and down menu
+    $(document).ready(function() {
+     $("#showVideo").click(function(){
+       $("video").slideToggle(1000);
+
+     })
+
+    });
+    </script>
+    </body>
+</html>
